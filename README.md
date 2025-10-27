@@ -68,8 +68,8 @@ python Main.py
 
 ## Contributors
 
-- **Friend Name**: Exercises 1-4 (Data cleaning, acceptance rate calculation, sorting, and elite classification)
-- **Your Name**: Exercises 5-7 (Summary statistics and grouped analyses)
+- **Umejr**: Exercises 1-4 (Data cleaning, acceptance rate calculation, sorting, and elite classification)
+- **Casper**: Exercises 5-7 (Summary statistics and grouped analyses)
 
 ## Dataset
 
