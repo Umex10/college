@@ -80,3 +80,27 @@ print()
 print("-- Final columns preview --")
 print(college[['Private', 'Apps', 'Accept', 'Acceptance_Rate', 'Top10perc', 'Elite']].head())
 
+# 5. Exercise
+print()
+print("----- 5. Exercise -----")
+print()
+
+summary = college.describe()
+print(summary.T.round(2))
+
+# 6. Exercise
+print()
+print("----- 6. Exercise -----")
+print()
+variables_of_interest = ['Acceptance_Rate', 'Room_Board', 'Books', 'PhD', 'Grad_Rate'] # investigating the mean of those variables
+private_means = college.groupby('Private', observed=False)[variables_of_interest].mean() # Grouping by Private Collages (NO or YES)
+print(private_means.T.round(2))
+
+# 7. Exercise
+print()
+print("----- 7. Exercise -----")
+print()
+
+group_by_private_elite = college.groupby(['Private','Elite'], observed=False)[variables_of_interest].mean() # Grouping by Private and Elite Collages (NO or YES)
+print(group_by_private_elite.T.round(2))
+print()
